@@ -1,0 +1,44 @@
+.book-service {
+    padding: 50px 20px;
+    background: #f8f9fa;
+    text-align: center;
+  }
+  
+  .book-service h2 {
+    color: #1a237e;
+    margin-bottom: 20px;
+  }
+  
+  .book-service p {
+    margin-bottom: 30px;
+  }
+  
+  .book-service form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .book-service form input,
+  .book-service form select,
+  .book-service form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .book-service form button {
+    background: #1a237e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .book-service form button:hover {
+    background: #ffb74d;
+  }

@@ -1,0 +1,113 @@
+.products {
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, #e8eaf6, #f8f9fa);
+    text-align: center;
+  }
+  
+  .products h2 {
+    color: #1a237e;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .products h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #ffb74d;
+    margin: 10px auto 0;
+    border-radius: 5px;
+  }
+  
+  .product-slider {
+    margin-top: 30px;
+  }
+  
+  .product-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 4px solid #1a237e;
+  }
+  
+  .product-info {
+    padding: 20px;
+  }
+  
+  .product-info h3 {
+    color: #1a237e;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .product-info p {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .price {
+    color: #ff5722;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: block;
+  }
+  
+  .buy-now {
+    background: #1a237e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .buy-now:hover {
+    background: #ffb74d;
+    transform: scale(1.05);
+  }
+  
+  /* Carousel Dots Customization */
+  .slick-dots li button:before {
+    font-size: 12px;
+    color: #ccc;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #1a237e;
+  }
+  
+  .slick-arrow {
+    z-index: 2;
+    background: #1a237e;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  .slick-arrow:hover {
+    background: #ffb74d;
+  }

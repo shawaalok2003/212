@@ -1,0 +1,121 @@
+/* Section Styling */
+.vision {
+  background: #1a237e;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.vision h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #ffb74d;
+  position: relative;
+}
+
+.vision h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #ffffff;
+  margin: 10px auto 0;
+  border-radius: 5px;
+}
+
+/* Slider Styling */
+.vision-slider {
+  margin-top: 30px;
+}
+
+.vision-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.vision-content {
+  background-size: cover;
+  background-position: center;
+  padding: 40px;
+  border-radius: 15px;
+  color: white;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.vision-content:hover {
+  transform: translateY(-10px);
+}
+
+.vision-content h3 {
+  font-size: 1.8rem;
+  color: #ffb74d;
+  margin-bottom: 20px;
+}
+
+.vision-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.vision-content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.vision-content ul li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #e8eaf6;
+}
+
+/* Dots Customization */
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #ccc;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ffb74d;
+}
+
+/* Arrows */
+.slick-arrow {
+  z-index: 2;
+  background: #ffb74d;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.slick-arrow:hover {
+  background: #ffffff;
+  color: #ffb74d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .vision-content {
+    padding: 20px;
+    width: 95%;
+  }
+
+  .vision-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .vision-content p {
+    font-size: 0.9rem;
+  }
+}

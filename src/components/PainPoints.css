@@ -1,0 +1,74 @@
+/* Section Styles */
+.pain-points {
+  background: linear-gradient(to bottom, #1a237e, #283593);
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.pain-points h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #ffb74d;
+  position: relative;
+}
+
+.pain-points h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #ffffff;
+  margin: 10px auto 0;
+  border-radius: 5px;
+}
+
+/* Container for Cards */
+.pain-points-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Card Styles */
+.pain-point-card {
+  background: #3949ab;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.pain-point-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Card Title */
+.pain-point-card h3 {
+  font-size: 1.5rem;
+  color: #ffb74d;
+  margin-bottom: 15px;
+}
+
+/* Card Description */
+.pain-point-card p {
+  font-size: 1rem;
+  color: #e8eaf6;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pain-points-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pain-point-card {
+    width: 90%;
+  }
+}
